@@ -10,14 +10,42 @@ export function ContactSection() {
     email: "",
     message: "",
   });
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
-    // Reset form
-    setFormData({ name: "", email: "", message: "" });
-    alert("Message failed to be sent! Try again later.");
+    setStatus("loading");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "YOUR_WEB3FORMS_ACCESS_KEY_HERE",
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setStatus("success");
+        setFormData({ name: "", email: "", message: "" });
+        setTimeout(() => setStatus("idle"), 3000);
+      } else {
+        console.error(result);
+        setStatus("error");
+        setTimeout(() => setStatus("idle"), 3000);
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 3000);
+    }
   };
 
   return (
@@ -102,7 +130,9 @@ export function ContactSection() {
                 <Send className="w-4 h-4" />
               </div>
             </div>
-            <span>Send Message!</span>
+            <span>
+              {status === "loading" ? "Sending..." : status === "success" ? "Message Sent!" : status === "error" ? "Failed! Try Again" : "Send Message!"}
+            </span>
           </button>
         </form>
       </div>
