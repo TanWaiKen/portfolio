@@ -12,19 +12,19 @@
         --card-foreground: 0 0% 100%;
         --popover: 235 30% 12%;
         --popover-foreground: 0 0% 100%;
-        --primary: 292 84% 60%;
+        --primary: 217 91% 60%;
         --primary-foreground: 0 0% 100%;
         --secondary: 235 30% 18%;
         --secondary-foreground: 0 0% 100%;
         --muted: 235 20% 20%;
         --muted-foreground: 235 10% 60%;
-        --accent: 292 84% 60%;
+        --accent: 217 91% 60%;
         --accent-foreground: 0 0% 100%;
         --destructive: 0 84% 60%;
         --destructive-foreground: 0 0% 100%;
         --border: 235 30% 20%;
         --input: 235 30% 18%;
-        --ring: 292 84% 60%;
+        --ring: 217 91% 60%;
         --radius: 1rem;
     }
 
@@ -35,19 +35,19 @@
         --card-foreground: 0 0% 100%;
         --popover: 235 30% 12%;
         --popover-foreground: 0 0% 100%;
-        --primary: 292 84% 60%;
+        --primary: 217 91% 60%;
         --primary-foreground: 0 0% 100%;
         --secondary: 235 30% 18%;
         --secondary-foreground: 0 0% 100%;
         --muted: 235 20% 20%;
         --muted-foreground: 235 10% 60%;
-        --accent: 292 84% 60%;
+        --accent: 217 91% 60%;
         --accent-foreground: 0 0% 100%;
         --destructive: 0 84% 60%;
         --destructive-foreground: 0 0% 100%;
         --border: 235 30% 20%;
         --input: 235 30% 18%;
-        --ring: 292 84% 60%;
+        --ring: 217 91% 60%;
     }
 }
 
@@ -88,14 +88,14 @@
 
     51%,
     100% {
-        border-color: #e879f9
+        border-color: #3b82f6
     }
 }
 
 .typing-text {
     overflow: hidden;
     white-space: nowrap;
-    border-right: 3px solid #e879f9;
+    border-right: 3px solid #3b82f6;
     animation: typing 4s steps(20) infinite, blink 0.8s step-end infinite;
 }
 
@@ -151,7 +151,7 @@
 
 /* Gradient text */
 .gradient-text {
-    background: linear-gradient(135deg, #e879f9 0%, #8b5cf6 50%, #06b6d4 100%);
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #06b6d4 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -165,7 +165,7 @@
 
 .card-glow:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 30px rgba(232, 121, 249, 0.3);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
 }
 
 /* Wave animation */
@@ -253,6 +253,6 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #e879f9;
-    box-shadow: 0 0 10px #e879f9;
+    background: #3b82f6;
+    box-shadow: 0 0 10px #3b82f6;
 }

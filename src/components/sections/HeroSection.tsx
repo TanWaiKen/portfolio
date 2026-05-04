@@ -176,7 +176,7 @@ export function HeroSection() {
         <div className="flex-1 pointer-events-none" /> {/* Left Column Spacer */}
         {/* Right Column for Lanyard */}
         <div className="flex-1 relative flex items-center justify-center pointer-events-none">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[600px] aspect-square rounded-full bg-gradient-to-r from-pink-500/10 via-purple-500/10 to-cyan-500/10 blur-[80px]" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[600px] aspect-square rounded-full bg-gradient-to-r from-blue-500/10 via-indigo-500/10 to-cyan-500/10 blur-[80px]" />
           <div className="absolute w-[1000px] left-1/2 -translate-x-1/2 top-0 bottom-[-40px] z-10 pointer-events-auto overflow-visible">
             <Lanyard position={[0, 0, 13]} gravity={[0, -40, 0]} />
           </div>
@@ -196,7 +196,7 @@ export function HeroSection() {
 
       {/* Mobile Lanyard Overlay */}
       <div className="md:hidden absolute inset-0 z-[10] top-[0px] bottom-[0px] pointer-events-none flex items-center justify-center overflow-visible">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[600px] aspect-square rounded-full bg-gradient-to-r from-pink-500/10 via-purple-500/10 to-cyan-500/10 blur-[80px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[600px] aspect-square rounded-full bg-gradient-to-r from-blue-500/10 via-indigo-500/10 to-cyan-500/10 blur-[80px]" />
         <div className="absolute w-[1000px] left-1/2 -translate-x-1/2 inset-y-0 z-10 pointer-events-auto overflow-visible">
           <Lanyard position={[0, 0, 18]} gravity={[0, -40, 0]} />
         </div>

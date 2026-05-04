@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   title: "Ken Tan's Personal Website",
   description: "Tan Wai Ken's Personal Portfolio Website",
   icons: {
-    icon: "/joeee_logo.png",
-    shortcut: "/joeee_logo.png",
-    apple: "/joeee_logo.png",
+    icon: "/ken_without_bg.JPG",
+    shortcut: "/ken_without_bg.JPG",
+    apple: "/ken_without_bg.JPG",
   },
 };
 
