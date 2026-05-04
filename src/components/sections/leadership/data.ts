@@ -1,70 +1,32 @@
 export const LEADERSHIP_EVENTS = [
     {
         id: "l-1",
-        organization: "UTAR Kampar Computer Society",
-        role: "Logistics Manager - Enlight 4.0",
-        period: "Feb 2024 - Jun 2024",
+        organization: "APU Artificial Intelligence Club (APU AIC)",
+        role: "President",
+        period: "Dec 2025 - Present",
         highlights: [
-            "Coordinated an industrial visit to Hilti, Alibaba Cloud, PayNet, AIA Digital+, PPG, and Edward Lifescience for 40 students.",
-            "Managed logistics, scheduling, transportation, and accommodation.",
+            "Leading the APU Artificial Intelligence Club, organizing workshops, and managing club activities.",
+            "Overseeing club operations and driving initiatives to promote AI education within the campus.",
         ],
     },
     {
         id: "l-2",
-        organization: "UTAR Kampar Computer Society",
-        role: "Chairperson - Resume Workshop",
-        period: "Apr 2024",
+        organization: "APU Artificial Intelligence Club (APU AIC)",
+        role: "Tech Lead",
+        period: "Oct 2024 - Dec 2025",
         highlights: [
-            "Organized a resume workshop in collaboration with Deloitte.",
-            "Successfully attracted and engaged over 100 student participants.",
+            "Led technical projects and mentored members in Machine Learning, Explainable AI (XAI), and software development.",
+            "Facilitated technical workshops and collaborated on AI-driven solutions.",
         ],
     },
     {
         id: "l-3",
-        organization: "Universiti Tunku Abdul Rahman",
-        role: "Vice Secretary - CTF Competition",
-        period: "Jul 2023",
+        organization: "Asia Pacific University (APU)",
+        role: "Hackathon Participant & Innovator",
+        period: "2023 - Present",
         highlights: [
-            "Assisted in coordinating the UTAR-FICT Capture The Flag (CTF) competition.",
-        ],
-    },
-    {
-        id: "l-4",
-        organization: "UTAR Kampar Computer Society",
-        role: "Program Manager - AR Workshop",
-        period: "Jun 2023 - Jul 2023",
-        highlights: [
-            "Coordinated program workflows, speaker engagements, and technical setups.",
-            "Registered and managed over 50 participants for an immersive AR experience.",
-        ],
-    },
-    {
-        id: "l-5",
-        organization: "UTAR Kampar Computer Society",
-        role: "Chairperson - Coding Workshop",
-        period: "Apr 2023",
-        highlights: [
-            "Collaborated with Deloitte Consulting to conduct a coding workshop.",
-            "Engaged more than 100 students in UTAR.",
-        ],
-    },
-    {
-        id: "l-6",
-        organization: "UTAR Kampar Computer Society",
-        role: "Secretary - Flutter Workshop",
-        period: "Mar 2023 - Apr 2023",
-        highlights: [
-            "Facilitated administrative and organizational tasks for the Flutter Workshop.",
-        ],
-    },
-    {
-        id: "l-7",
-        organization: "UTAR Kampar Computer Society",
-        role: "Publicity Manager - Enlight 3.0",
-        period: "Feb 2023 - Jun 2023",
-        highlights: [
-            "Coordinated an industrial visitation event to PayNet, Fusionex, Alibaba Cloud, and AIA Digital+ for 80 students.",
-            "Led content creation by designing 20+ posts, producing 3+ promotional videos, and creating merchandise.",
+            "Actively participated in national hackathons including HMack 2025 and Great Malaysia AI Hackathon.",
+            "Led cross-functional teams to develop AI-powered applications under tight deadlines.",
         ],
     },
 ];

@@ -1,8 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, Send } from "lucide-react";
-import { FaTelegram } from "react-icons/fa";
+import { Mail, Send, Phone } from "lucide-react";
 import "../ui/Button.css";
 
 export function ContactSection() {
@@ -37,29 +36,27 @@ export function ContactSection() {
               <Mail className="w-8 h-8 text-primary" />
             </div>
             <h3 className="text-xl font-semibold text-white mb-2">Email</h3>
-            <p className="text-white/60 mb-3">joeee0ee@gmail.com</p>
+            <p className="text-white/60 mb-3">tanwaiken552@gmail.com</p>
             <a
-              href="mailto:joeee0ee@gmail.com"
+              href="mailto:tanwaiken552@gmail.com"
               className="text-primary hover:underline"
             >
               Send a message
             </a>
           </div>
 
-          {/* Telegram Card */}
+          {/* Phone Card */}
           <div className="card-glow bg-card/50 backdrop-blur-sm rounded-2xl p-6 border border-primary/20 text-center">
             <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
-              <FaTelegram className="w-8 h-8 text-primary" />
+              <Phone className="w-8 h-8 text-primary" />
             </div>
-            <h3 className="text-xl font-semibold text-white mb-2">Telegram</h3>
-            <p className="text-white/60 mb-3">@wthislifehuh</p>
+            <h3 className="text-xl font-semibold text-white mb-2">Phone</h3>
+            <p className="text-white/60 mb-3">019-887 6422</p>
             <a
-              href="https://t.me/wthislifehuh"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="tel:0198876422"
               className="text-primary hover:underline"
             >
-              Chat on Telegram
+              Call me
             </a>
           </div>
         </div>

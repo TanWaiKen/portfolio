@@ -32,75 +32,14 @@ const devOps = [
 
 const workExperience = [
   {
-    company: "GDEX Berhad Sdn. Bhd.",
-    role: "AI Specialist (Contract-based)",
-    period: "Feb 2025 - Mar 2026",
-    icon: "/gdex_logo.png",
-    color: "from-white to-white",
+    company: "U Mobile",
+    role: "Business System Operation - Intern",
+    period: "Jul 2025 - Nov 2025",
+    icon: "/umobile_logo.png",
+    color: "from-white to-neutral-200",
     highlights: [
-      "Architected AI-powered OCR and Parcel Delivery Verification systems",
-      "Fine-tuned LLM Models (Gemini, Nova AI) using Python and PyTorch",
-      "Automated extraction workflows, boosting efficiency >50%",
-      "Designed scalable cloud-based AI architecture on AWS",
-    ],
-  },
-  {
-    company: "Real-Analytics Sdn. Bhd.",
-    role: "Contract AI Engineer (Project-based)",
-    period: "Feb 2025 - Mar 2026",
-    icon: "/real_analytics_logo.png",
-    color: "from-white to-white",
-    highlights: [
-      "Architected AI-powered OCR and Parcel Delivery Verification systems",
-      "Fine-tuned LLM Models (Gemini, Nova AI) using Python and PyTorch",
-      "Automated extraction workflows, boosting efficiency >50%",
-      "Designed scalable cloud-based AI architecture on AWS",
-    ],
-  },
-  {
-    company: "Hilti Asia IT Services",
-    role: "IT Business Analyst/DevOps Engineer Intern (Full Time)",
-    period: "Oct 2024 - Jan 2025",
-    icon: "/hilti_logo.png",
-    color: "from-red-500 to-red-700",
-    highlights: [
-      "Coordinated end-to-end delivery of CloudSSO revamp with 100% uptime",
-      "Benchmarked Apache to Nginx migration reducing latency by 30-50%",
-      "Optimized GitLab CI/CD pipelines using Terraform & AWS",
-    ],
-  },
-  {
-    company: "Universiti Tunku Abdul Rahman",
-    role: "Research Assistant",
-    period: "Sep 2024 - Nov 2024",
-    icon: "/utar_logo.png",
-    color: "from-white to-white",
-    highlights: [
-      "Designed LLM framework for structured data extraction",
-      "Improved pipeline accuracy by 38% through prompt optimization",
-      "Contributed to research leading to IEEE AiDAS 2024 publication",
-    ],
-  },
-  {
-    company: "Axcell Solutions Sdn. Bhd.",
-    role: "Junior Software Developer (Part Time)",
-    period: "Nov 2023 - Oct 2024",
-    icon: "/axcell_logo.png",
-    color: "from-white to-white",
-    highlights: [
-      "Developed responsive promotional websites using WordPress",
-      "Integrated HTML websites with Vue.js, improving reusability by 43%",
-    ],
-  },
-  {
-    company: "Ringo Technologies Sdn. Bhd.",
-    role: "Assistant Software Developer (Part Time)",
-    period: "May 2022 - May 2024",
-    icon: "/ringo_logo.jpg",
-    color: "from-white to-white",
-    highlights: [
-      "Produced system flow documentation and requirements analysis, reducing project planning time by 15%.",
-      "Collaborated with a team of 2 engineers, applying Scrum framework for project management.",
+      "Assisted in business system operations, monitoring, and maintenance.",
+      "Collaborated with cross-functional teams to improve operational efficiency and system reliability.",
     ],
   },
 ];

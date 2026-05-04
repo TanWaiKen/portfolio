@@ -6,118 +6,152 @@ import { AwardTile } from './AwardTile';
 import { AwardPreviewCard } from './AwardPreviewCard';
 
 const AWARDS_DATA: Award[] = [
+    // GOLD/TOP 3
     {
         id: "award-1",
-        title: "Kelvin Pah Award",
-        issuer: "UTAR",
-        year: "2025",
-        category: "Academic Excellence",
-        impact: "Awarded to one outstanding student from FICT based on academic performance, extracurricular activities, and exemplary conduct."
+        title: "Gold / Top 3",
+        issuer: "International Inter-Varsity Challenge",
+        year: "2024",
+        category: "Achievements & Competitions",
+        impact: "Secured Gold/Top 3 in the International Inter-Varsity Challenge 2024."
     },
     {
         id: "award-2",
-        title: "Best Graduate Award",
-        issuer: "MDT Innovations",
+        title: "Gold / Top 3",
+        issuer: "Nation Hackathon X Hackathon",
         year: "2025",
-        category: "Academic Excellence",
-        impact: "Awarded to the graduate with the highest CGPA for August Convocation 2025 at UTAR."
+        category: "Achievements & Competitions",
+        impact: "Secured Gold/Top 3 in the Nation Hackathon X Hackathon 2025."
     },
+    // SILVER
     {
         id: "award-3",
-        title: "Best Graduate Award",
-        issuer: "UTAR",
-        year: "2025",
-        category: "Academic Excellence",
-        impact: "Awarded to the graduate with the highest CGPA in each Faculty."
+        title: "Silver",
+        issuer: "Nation IUCEL x KNOVSI",
+        year: "2024",
+        category: "Achievements & Competitions",
+        impact: "Won Silver at Nation IUCEL x KNOVSI 2024."
     },
+    // TOP 10
     {
         id: "award-4",
-        title: "UTAR Book Prize",
-        issuer: "UTAR Education Foundation",
+        title: "Top 10 Finalist",
+        issuer: "Nation AWS Great AI Hackathon",
         year: "2025",
-        category: "Academic Excellence",
-        impact: "Awards are given to students graduating with an Honours degree with Distinction."
-    },
-    {
-        id: "award-9",
-        title: "Published Author (IEEE AiDAS)",
-        issuer: "IEEE AiDAS",
-        year: "2024",
-        category: "Academic Excellence",
-        impact: "J. E. Ho, B. Y. Ooi and M. Westner, 'Application Integration Framework for Large Language Models', Presented at the 2024 5th International Conference on Artificial Intelligence and Data Sciences (AiDAS) at Bangkok, Thailand, 2024, pp. 1-6"
-    },
-    {
-        id: "award-11",
-        title: "100% Scholarship for Top Achiever",
-        issuer: "UTAR (Bachelor's)",
-        year: "2022",
-        category: "Academic Excellence",
-        impact: "Received 100% tuition fee waiver every semester for maintaining CGPA of 3.9000 & above."
-    },
-    {
-        id: "award-12",
-        title: "100% Scholarship for Top Achiever",
-        issuer: "UTAR (Foundation's)",
-        year: "2021",
-        category: "Academic Excellence",
-        impact: "Received a full tuition fee waiver for every semester for scoring SPM 8As & above."
-    },
-    {
-        id: "award-13",
-        title: "President's List Award",
-        issuer: "UTAR",
-        year: "2021–2025",
-        category: "Academic Excellence",
-        impact: "Received President's List Award for 11 consecutive semesters by achieving a GPA of 3.8500+."
+        category: "Achievements & Competitions",
+        impact: "Reached the Top 10 in the Nation AWS Great AI Hackathon 2025."
     },
     {
         id: "award-5",
-        title: "FICT FYP Competition — Champion",
-        issuer: "UTAR",
+        title: "Top 10 Finalist",
+        issuer: "Nation KITAHACK Hackathon",
         year: "2025",
-        category: "Technical Competitions",
-        impact: "Awarded Champion among ~200 Final Year Projects for 'Large Language Model Application Integration'."
+        category: "Achievements & Competitions",
+        impact: "Reached the Top 10 in the Nation KITAHACK Hackathon 2025."
     },
     {
         id: "award-6",
-        title: "Hackattack — First Runner-up",
-        issuer: "UTAR x USM",
+        title: "Top 10 Finalist",
+        issuer: "APU Hackthletes Solana Hackfest",
         year: "2024",
-        category: "Technical Competitions",
-        impact: "Group GPT-1011 won First Runner-up for Hackattack organized by UTAR x USM."
+        category: "Achievements & Competitions",
+        impact: "Reached the Top 10 in the APU Hackthletes Solana Hackfest 2024."
     },
     {
         id: "award-7",
-        title: "Tech4Good Challenge Top 8",
-        issuer: "Vitrox Technologies",
+        title: "Top 10 Finalist",
+        issuer: "APU Joget NextGen Hack",
         year: "2024",
-        category: "Technical Competitions",
-        impact: "Group PartTimer received the Best Poster Design Award with the project 'Resonate'.",
-        link: "https://news.utar.edu.my/awards/2024/Aug/01/01/01.html"
+        category: "Achievements & Competitions",
+        impact: "Reached the Top 10 in the APU Joget NextGen Hack 2024."
+    },
+    // EXCELLENCE/PARTICIPATION
+    {
+        id: "award-8",
+        title: "Excellence Award",
+        issuer: "Nation KITAHACK Hackathon",
+        year: "2026",
+        category: "Achievements & Competitions",
+        impact: "Awarded Excellence at the Nation KITAHACK Hackathon 2026."
+    },
+    {
+        id: "award-9",
+        title: "Excellence Award",
+        issuer: "Microsoft Imagine Cup",
+        year: "2026",
+        category: "Achievements & Competitions",
+        impact: "Awarded Excellence at the International Microsoft Imagine Cup 2026."
     },
     {
         id: "award-10",
-        title: "Tech 4 Good Challenge — 2nd Runner-Up",
-        issuer: "Vitrox Technologies",
-        year: "2023",
-        category: "Technical Competitions",
-        impact: "Secured Second Runner-up in Vitrox Tech 4 Good Challenge 2023 as part of team 'HeliCoda'.",
-        link: "https://www.vitrox.edu.my/helicoda"
+        title: "Excellence Award",
+        issuer: "Nation Huawei Hackathon",
+        year: "2025",
+        category: "Achievements & Competitions",
+        impact: "Awarded Excellence at the Nation Huawei Hackathon 2025."
     },
     {
-        id: "award-8",
-        title: "Platinum Grade — Soft Skills",
-        issuer: "UTAR",
-        year: "2024",
-        category: "Leadership & Contribution",
-        impact: "Awarded 'PLATINUM' grade for collecting over 150 points across 10 components including leadership and integrity."
+        id: "award-11",
+        title: "Excellence Award",
+        issuer: "IBM TechXchange Hackathon",
+        year: "2025",
+        category: "Achievements & Competitions",
+        impact: "Awarded Excellence at the International IBM TechXchange Hackathon 2025."
     },
+    // CERTIFICATIONS & TRAINING
+    {
+        id: "cert-1",
+        title: "MD PDTI Tech Club Intensive Workshop",
+        issuer: "MDEC",
+        year: "2026",
+        category: "Certifications & Training",
+        impact: "Completed the intensive tech workshop organized by MDEC."
+    },
+    {
+        id: "cert-2",
+        title: "5G Pioneers Program",
+        issuer: "Ericsson",
+        year: "2024",
+        category: "Certifications & Training",
+        impact: "Successfully completed the Ericsson 5G Pioneers program."
+    },
+    {
+        id: "cert-3",
+        title: "5-Day AI Agents Intensive Course",
+        issuer: "Google",
+        year: "2024",
+        category: "Certifications & Training",
+        impact: "Completed the 5-Day AI Agents Intensive Course by Google."
+    },
+    {
+        id: "cert-4",
+        title: "Generative AI Foundations",
+        issuer: "AWS Academy",
+        year: "2024",
+        category: "Certifications & Training",
+        impact: "Graduate of the AWS Academy Generative AI Foundations program."
+    },
+    {
+        id: "cert-5",
+        title: "Build 17 Beginner Projects (Python | JS | C#)",
+        issuer: "Udemy",
+        year: "2023",
+        category: "Certifications & Training",
+        impact: "Completed comprehensive project-based programming course."
+    },
+    {
+        id: "cert-6",
+        title: "NAv7: Introduction to Networks",
+        issuer: "Cisco",
+        year: "2023",
+        category: "Certifications & Training",
+        impact: "Completed NAv7 Introduction to Networks certification by Cisco."
+    }
 ];
 
 const CATEGORIES: AwardCategory[] = [
-    "Academic Excellence",
-    "Technical Competitions",
-    "Leadership & Contribution"
+    "Achievements & Competitions",
+    "Certifications & Training"
 ];
 
 export function AwardsSection() {

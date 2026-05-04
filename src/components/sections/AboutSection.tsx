@@ -11,12 +11,12 @@ export function AboutSection() {
         <div className="w-full lg:w-5/12 flex-shrink-0 z-10">
           <div className="w-full max-w-sm mx-auto mt-4 lg:mt-8">
             <ProfileCard
-              name="Joe Ee"
-              title="Software & AI Engineer"
-              handle="joeee"
+              name="Ken Tan"
+              title="AI & Backend Engineer"
+              handle="kentan"
               status="Online"
-              contactText="Catch Me"
-              avatarUrl="/joeee_without_bg.png"
+              contactText="Let's Collaborate"
+              avatarUrl="/ken_without_bg.jpg"
               showUserInfo
               enableTilt={true}
               enableMobileTilt
@@ -41,7 +41,7 @@ export function AboutSection() {
           {/* About Text */}
           <div className="text-center lg:text-left space-y-4 text-white/80">
             <p>
-              Hello! I&apos;m Joeee, an engineer who is currently focusing on designing and building robust <span className="text-primary">AI-powered workflow, architecture </span> and <span className="text-primary">backend integrations</span> that connect data from ingestion to insight!
+              Hello! I&apos;m Ken, an engineer who is currently focusing on designing and building robust <span className="text-primary">AI-powered workflow, architecture </span> and <span className="text-primary">backend integrations</span> that connect data from ingestion to insight!
             </p>
             <p>
               I love translating dreams into reality.
@@ -50,13 +50,13 @@ export function AboutSection() {
               But I also believe growth doesn&apos;t happen only behind a screen (or in a straight line).
             </p>
             <p>
-              After graduating with <span className="text-primary">3 Best Graduate Awards</span>, I bought a one-way ticket to <span className="text-primary">New Zealand</span> and spent 6 months working (tech + factory). It reshaped how I see risk, resilience, and progress.
+              I am an active hackathon participant, having joined multiple national and international competitions. This reshaped how I see problem-solving and collaboration under pressure.
             </p>
             <p>
               Now I build with both precision and perspective!
             </p>
             <p>
-              I&apos;m also a big fan of cats, matcha, and travelling. Catch me if you can! 😼
+              I&apos;m also passionate about emerging AI technologies, coding, and building scalable applications. Catch me if you can! 🚀
             </p>
           </div>
 
@@ -71,10 +71,10 @@ export function AboutSection() {
                 <h3 className="text-xl font-semibold text-white">Education</h3>
               </div>
               <div className="space-y-2 text-white/80">
-                <p className="font-medium text-white">Bachelor of Computer Science (Honours)</p>
-                <p className="text-sm">Universiti Tunku Abdul Rahman</p>
-                <p className="text-sm text-white/60">Graduate: Jun 2025</p>
-                <p className="text-sm text-primary">CGPA: 3.98/4.00 (Ranked 1st/1,637)</p>
+                <p className="font-medium text-white">BSc (Hons) in Artificial Intelligence</p>
+                <p className="text-sm">Asia Pacific University of Technology and Innovation</p>
+                <p className="text-sm text-white/60">Graduate: 2025</p>
+                <p className="text-sm text-primary">CGPA: 3.8+/4.00</p>
               </div>
             </div>
 

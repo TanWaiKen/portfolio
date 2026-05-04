@@ -1,4 +1,4 @@
-export type AwardCategory = "Academic Excellence" | "Technical Competitions" | "Leadership & Contribution";
+export type AwardCategory = string;
 
 export interface Award {
     id: string;

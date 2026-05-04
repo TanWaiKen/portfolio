@@ -2,12 +2,12 @@
 
 import { useEffect, useState } from "react";
 import { Download, MessageCircle, ChevronDown } from "lucide-react";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import TextPressure from "../ui/TextPressure";
 import Lanyard from "../ui/Lanyard";
 import Aurora from "../ui/Aurora";
 
-const roles = ["Software Engineer", "AI Enthusiast", "Story Teller ", "Digital Nomad", "Cat Lover😻", "UTAR Best Graduate 2025", "NZ working holiday alum"];
+const roles = ["Software Engineer", "AI Engineer", "Hackathon Enthusiast", "Full Stack Developer", "Tech Explorer", "Innovator"];
 
 export function HeroSection() {
   const [currentRole, setCurrentRole] = useState(0);
@@ -62,7 +62,7 @@ export function HeroSection() {
           {/* Name */}
           <div style={{ position: 'relative', height: '150px', width: '100%', maxWidth: '100%' }} className="mb-2">
             <TextPressure
-              text="JOE EE HO"
+              text="KEN TAN"
               flex
               alpha={false}
               stroke={false}
@@ -86,7 +86,7 @@ export function HeroSection() {
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4 justify-center md:justify-start">
             {/* <a
-              href="/JoeEe_Ho_Resume_2026.pdf"
+              href="/Tan_Wai_Ken_CV.pdf"
               download
               className="btn-glow flex items-center justify-center gap-2 px-6 py-3 bg-[#e879f9] text-[#4a044e] rounded-md hover:bg-[#d946ef] transition-all font-semibold text-sm md:text-base border border-transparent shadow-[0_0_15px_rgba(232,121,249,0.3)]"
             >
@@ -94,7 +94,7 @@ export function HeroSection() {
               Download Resume
             </a> */}
             <a
-              href="/JoeEe_Ho_Resume_2026.pdf"
+              href="/Tan_Wai_Ken_CV.pdf"
               download
               className="
                 group relative overflow-hidden
@@ -138,7 +138,7 @@ export function HeroSection() {
           <div className="flex xl:hidden items-center justify-center md:justify-start gap-4 mt-8 mb-12">
             <div className="w-[30px] h-[2px] bg-white/20 rounded-full"></div>
             <a
-              href="https://www.linkedin.com/in/joe-ee-ho/"
+              href="https://www.linkedin.com/in/tan-wai-ken-92005b266"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/60 hover:text-[#e879f9] transition-colors hover:scale-110"
@@ -147,13 +147,22 @@ export function HeroSection() {
               <FaLinkedin className="w-6 h-6" />
             </a>
             <a
-              href="https://github.com/wthislifehuh"
+              href="https://github.com/TanWaiKen"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/60 hover:text-[#e879f9] transition-colors hover:scale-110"
               aria-label="GitHub"
             >
               <FaGithub className="w-6 h-6" />
+            </a>
+            <a
+              href="https://www.instagram.com/mly_kenny/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/60 hover:text-[#e879f9] transition-colors hover:scale-110"
+              aria-label="Instagram"
+            >
+              <FaInstagram className="w-6 h-6" />
             </a>
           </div>
         </div>
@@ -218,7 +227,7 @@ export function HeroSection() {
       <div className="hidden xl:flex absolute left-8 top-1/2 -translate-y-1/2 flex-col gap-6 items-center z-[30]">
         <div className="w-[2px] h-24 bg-white/20 mt-4 rounded-full"></div>
         <a
-          href="https://www.linkedin.com/in/joe-ee-ho/"
+          href="https://www.linkedin.com/in/tan-wai-ken-92005b266"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white/60 hover:text-[#e879f9] transition-colors hover:scale-110"
@@ -227,13 +236,22 @@ export function HeroSection() {
           <FaLinkedin className="w-5 h-5" />
         </a>
         <a
-          href="https://github.com/wthislifehuh"
+          href="https://github.com/TanWaiKen"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white/60 hover:text-[#e879f9] transition-colors hover:scale-110"
           aria-label="GitHub"
         >
           <FaGithub className="w-5 h-5" />
+        </a>
+        <a
+          href="https://www.instagram.com/mly_kenny/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white/60 hover:text-[#e879f9] transition-colors hover:scale-110"
+          aria-label="Instagram"
+        >
+          <FaInstagram className="w-5 h-5" />
         </a>
         <div className="w-[2px] h-24 bg-white/20 mt-4 rounded-full"></div>
       </div>

@@ -37,7 +37,7 @@ export function Footer() {
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
         {/* Name */}
-        <h3 className="text-3xl font-bold text-white mb-8">HO JOE EE</h3>
+        <h3 className="text-3xl font-bold text-white mb-8">TAN WAI KEN</h3>
 
         {/* Navigation */}
         <nav className="flex flex-wrap justify-center gap-4 md:gap-8 mb-8">
@@ -55,7 +55,7 @@ export function Footer() {
         {/* Social Links */}
         <div className="flex justify-center gap-4 mb-8">
           <a
-            href="https://www.linkedin.com/in/joe-ee-ho/"
+            href="https://www.linkedin.com/in/tan-wai-ken-92005b266"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-white/10 text-white hover:bg-primary transition-all"
@@ -64,7 +64,7 @@ export function Footer() {
             <FaLinkedin className="w-5 h-5" />
           </a>
           <a
-            href="https://github.com/wthislifehuh"
+            href="https://github.com/TanWaiKen"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-white/10 text-white hover:bg-primary transition-all"
@@ -73,7 +73,7 @@ export function Footer() {
             <FaGithub className="w-5 h-5" />
           </a>
           <a
-            href="https://www.instagram.com/joe___ee/"
+            href="https://www.instagram.com/mly_kenny/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-white/10 text-white hover:bg-primary transition-all"
@@ -85,7 +85,7 @@ export function Footer() {
 
         {/* Copyright */}
         <p className="text-white/40 text-sm">
-          Copyright &copy; {new Date().getFullYear()} HO JOE EE. All rights reserved.
+          Copyright &copy; {new Date().getFullYear()} TAN WAI KEN. All rights reserved.
         </p>
       </div>
     </footer>

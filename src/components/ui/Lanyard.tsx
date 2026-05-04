@@ -132,6 +132,22 @@ function Band({ maxSpeed = 20, minSpeed = 2, isMobile = false }: BandProps) { //
 
     const { nodes, materials } = useGLTF(cardGLB) as any;
     const texture = useTexture(lanyard);
+    const customCardTexture = useTexture('/ken_talk.jpg');
+    customCardTexture.flipY = false;
+
+    // --- TEXTURE ADJUSTMENTS ---
+    // Since the 3D model's UV mapping might not perfectly match your photo's aspect ratio,
+    // you can tweak these values to position and scale it correctly:
+    customCardTexture.wrapS = THREE.ClampToEdgeWrapping;
+    customCardTexture.wrapT = THREE.ClampToEdgeWrapping;
+
+    // To Zoom OUT (fit more of the image), use numbers > 1 (e.g. 1.5, 2)
+    // To Zoom IN, use numbers < 1 (e.g. 0.8, 0.5)
+    customCardTexture.repeat.set(0.8, 0.8);
+
+    // To move the image left/right (X) or up/down (Y), change these offset numbers.
+    // Try values between -1 and 1
+    customCardTexture.offset.set(0.1, 0.1);
     const [curve] = useState(
         () =>
             new THREE.CatmullRomCurve3([new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3()])
@@ -186,28 +202,19 @@ function Band({ maxSpeed = 20, minSpeed = 2, isMobile = false }: BandProps) { //
             dir.copy(vec).sub(state.camera.position).normalize();
             vec.add(dir.multiplyScalar(state.camera.position.length()));
             [card, j1, j2, j3, fixed].forEach((ref) => ref.current?.wakeUp());
-            card.current?.setNextKinematicTranslation({
-                x: vec.x - dragged.x,
-                y: vec.y - dragged.y,
-                z: vec.z - dragged.z
-            });
+            vec.sub(dragged);
+            card.current?.setNextKinematicTranslation(vec);
         }
         if (fixed.current) {
             if (!dragged) {
                 // Subtle idle swing
-
-                fixed.current.setNextKinematicTranslation({
-                    x: baseAnchor.current.x + Math.sin(state.clock.elapsedTime * 0.5) * 0.3,
-                    y: topY,
-                    z: baseAnchor.current.z,
-                });
-                // fixed.current.setNextKinematicTranslation({
-                //     x: Math.sin(state.clock.elapsedTime * 0.5) * 0.3,
-                //     y: 8, // raised anchor higher
-                //     z: 0
-                // });
+                tmpVec.set(
+                    baseAnchor.current.x + Math.sin(state.clock.elapsedTime * 0.5) * 0.3,
+                    topY,
+                    baseAnchor.current.z
+                );
+                fixed.current.setNextKinematicTranslation(tmpVec);
             }
-
             // [j1, j2].forEach((ref) => {
             //     if (!ref.current.lerped) ref.current.lerped = new THREE.Vector3().copy(ref.current.translation());
             //     // The “lerp smoothing” that affects wobble - Reduce maxSpeed (e.g. 15–25) to calm it.
@@ -249,7 +256,8 @@ function Band({ maxSpeed = 20, minSpeed = 2, isMobile = false }: BandProps) { //
             band.current.geometry.setPoints(curve.getPoints(isMobile ? 16 : 32));
             ang.copy(card.current.angvel());
             rot.copy(card.current.rotation());
-            card.current.setAngvel({ x: ang.x, y: ang.y - rot.y * 0.25, z: ang.z });
+            ang.y -= rot.y * 0.25;
+            card.current.setAngvel(ang);
         }
     });
 
@@ -303,7 +311,7 @@ function Band({ maxSpeed = 20, minSpeed = 2, isMobile = false }: BandProps) { //
                     )} */}
                     <mesh geometry={nodes.card.geometry}>
                         <meshPhysicalMaterial
-                            map={materials.base.map}
+                            map={customCardTexture}
                             map-anisotropy={16}
                             clearcoat={isMobile ? 0 : 1}
                             clearcoatRoughness={0.15}
