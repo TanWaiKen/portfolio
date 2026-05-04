@@ -132,7 +132,7 @@ function Band({ maxSpeed = 20, minSpeed = 2, isMobile = false }: BandProps) { //
 
     const { nodes, materials } = useGLTF(cardGLB) as any;
     const texture = useTexture(lanyard);
-    const customCardTexture = useTexture('/ken_talk.jpg');
+    const customCardTexture = useTexture('/ken_talk.JPG');
     customCardTexture.flipY = false;
 
     // --- TEXTURE ADJUSTMENTS ---

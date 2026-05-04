@@ -16,7 +16,7 @@ export function AboutSection() {
               handle="kentan"
               status="Online"
               contactText="Let's Collaborate"
-              avatarUrl="/ken_without_bg.jpg"
+              avatarUrl="/ken_without_bg.JPG"
               showUserInfo
               enableTilt={true}
               enableMobileTilt
