@@ -11,9 +11,9 @@ const aiMlSkills = [
 ];
 
 const frameworkSkills = [
-  ["React / Next.js", "Vue.js"],
-  ["Node.js / Express", "REST APIs"],
-  ["Flutter / React Native", "PyQt"],
+  ["React", "Vue.js"],
+  ["Node.js", "REST APIs"],
+  ["Flutter"],
   ["Firebase", "MongoDB"],
   ["PostgreSQL", "MySQL"],
 ];
@@ -25,8 +25,8 @@ const languages = [
 ];
 
 const devOps = [
-  ["AWS", "Alibaba / Huawei"],
-  ["Terraform", "Git / CI/CD"],
+  ["AWS", "Azure"],
+  ["GCP", "Git / CI/CD"],
   ["Docker", "Nginx / Apache"],
 ];
 
