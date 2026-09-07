@@ -35,8 +35,13 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-# License
-Some UI components were adapted from React Bit (MIT License).
+## 💐 Credits
+
+Several of the animated UI primitives — including the aurora background, lanyard card, text-pressure effect, logo loop and scroll animations — were adapted from **[wthislifehuh/joeee-website-archived](https://github.com/wthislifehuh/joeee-website-archived)** and **[React Bits](https://reactbits.dev/)** (MIT licensed). Huge thanks to those projects; they saved a lot of time and taught plenty.
+
+## 📄 License
+
+[MIT](https://github.com/wthislifehuh/joeee-website-archived/blob/main/LICENSE) © 2026
 
 
 # Design Analysis
