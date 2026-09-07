@@ -37,7 +37,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## 💐 Credits
 
-Several of the animated UI primitives — including the aurora background, lanyard card, text-pressure effect, logo loop and scroll animations — were adapted from **[wthislifehuh/joeee-website-archived](https://github.com/wthislifehuh/joeee-website-archived)** and **[React Bits](https://reactbits.dev/)** (MIT licensed). Huge thanks to those projects; they saved a lot of time and taught plenty.
+Several of the animated UI primitives, including the aurora background, lanyard card, text-pressure effect, logo loop and scroll animations were adapted from **[wthislifehuh/joeee-website-archived](https://github.com/wthislifehuh/joeee-website-archived)** and **[React Bits](https://reactbits.dev/)** (MIT licensed). Huge thanks to those projects; they saved a lot of time and taught plenty.
 
 ## 📄 License
 
