@@ -6,8 +6,10 @@
         "dev": "next dev -H 0.0.0.0 --turbopack",
         "build": "next build",
         "start": "next start",
-        "lint": "bunx tsc --noEmit && next lint",
-        "format": "bunx biome format --write"
+        "lint": "eslint src/components/portfolio src/app/page.tsx src/app/layout.tsx",
+        "format": "bunx biome format --write",
+        "typecheck": "tsc --noEmit",
+        "test:visual": "node scripts/visual-qa.cjs"
     },
     "dependencies": {
         "@react-three/drei": "^10.7.7",

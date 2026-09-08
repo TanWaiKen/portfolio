@@ -18,7 +18,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The current design uses a Georgia display stack and an Arial/Helvetica reading stack, with no remote font request. The page implementation is in `src/components/portfolio/Portfolio.tsx`, its content in `content.ts`, and shared visual tokens/styles in `src/app/portfolio.css`.
+
+## Picture-book redesign
+
+The active site leads with Ken’s identity and portrait, followed by background, experience, projects, achievements, the character playground, and contact. It uses a painted landscape, a small impasto character guide, filterable project notes, accessible experience disclosures, and direct email contact. The hero dynamically loads the local `public/card.glb` with the existing Three.js/Rapier lanyard component and `ken_talk.JPG`. The original aurora and other unused UI primitives remain in source with their credits. The 3D card supports pointer dragging, a keyboard swing button, reduced idle motion, and explicit loading/retry states and WebGL context recovery.
+
+See [the current design decisions](design.md), [art prompts and provenance](docs/art-direction.md), and [the Playwright visual test workflow](docs/visual-testing.md). Run `npm run typecheck`, `npm run build`, and `npm run test:visual` for the relevant checks.
 
 ## Learn More
 
@@ -44,7 +50,7 @@ Several of the animated UI primitives, including the aurora background, lanyard 
 [MIT](https://github.com/wthislifehuh/joeee-website-archived/blob/main/LICENSE) © 2026
 
 
-# Design Analysis
+# Original design analysis (historical, superseded by design.md)
 Color Palette:
 
 Deep navy background (#0f0f23 / #1a1a3e)

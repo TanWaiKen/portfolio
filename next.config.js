@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    outputFileTracingRoot: __dirname,
     eslint: {
         ignoreDuringBuilds: true,
-    },
-    typescript: {
-        ignoreBuildErrors: true,
     },
     webpack: (config, { isServer }) => {
         config.module.rules.push({

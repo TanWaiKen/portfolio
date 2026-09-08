@@ -11,7 +11,7 @@ export function AboutSection() {
         <div className="w-full lg:w-5/12 flex-shrink-0 z-10">
           <div className="w-full max-w-sm mx-auto mt-4 lg:mt-8">
             <ProfileCard
-              name="Ken Tan"
+              name="Tan Wai Ken"
               title="AI & Backend Engineer"
               handle="kentan"
               status="Online"

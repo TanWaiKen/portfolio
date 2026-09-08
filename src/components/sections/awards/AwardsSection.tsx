@@ -8,6 +8,14 @@ import { AwardPreviewCard } from './AwardPreviewCard';
 const AWARDS_DATA: Award[] = [
     // GOLD/TOP 3
     {
+        id: "award-langhub",
+        title: "Top 1 / Champion (Category Winner)",
+        issuer: "AWS CendiAwan Hackathon",
+        year: "2025",
+        category: "Achievements & Competitions",
+        impact: "Awarded Top 1 in category for LangHub, an AI-powered dialect preservation and cultural immersion platform."
+    },
+    {
         id: "award-1",
         title: "Gold / Top 3",
         issuer: "International Inter-Varsity Challenge",

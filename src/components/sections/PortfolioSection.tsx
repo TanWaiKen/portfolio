@@ -30,6 +30,22 @@ const projects = [
         tags: ["AI", "Video Generation", "FastAPI", "React"],
     },
     {
+        title: "LangHub - Heritage AI (AWS CendiAwan Hackathon)",
+        description: "An AI-powered dialect preservation and cultural immersion platform developed for AWS CendiAwan Hackathon (Top 1 in category). Features AI tutors, archives, and speech recognition for Hokkien, Cantonese, and Hakka.",
+        image: "/langhub.png",
+        github: "https://github.com/TanWaiKen/Langhub",
+        demo: "https://drive.google.com/file/d/13PkCrfu7bkd1K8LXPVXusYumGvJ2MVBq/view?pli=1",
+        tags: ["AWS CendiAwan", "Top 1 Winner", "Heritage AI", "Dialect Preservation"],
+    },
+    {
+        title: "VestraS - Vector DB Pipeline & AI Study Workspace",
+        description: "An intelligent student study workspace and document retrieval platform built around an end-to-end vector database pipeline with semantic search across lecture notes and AI chat.",
+        image: "/vertras.png",
+        github: "https://github.com/luciuswilbert/VestraS/tree/ken/vector-db-pipeline",
+        demo: "https://drive.google.com/file/d/1pAd5Dk9VxZXL-bHsOfuYgL5ZF2LSjkfJ/view?usp=sharing",
+        tags: ["Vector DB", "RAG Pipeline", "AI Search", "FastAPI"],
+    },
+    {
         title: "Invoice AI Excel Generator (OCR)",
         description: "Developed an AI-powered Optical Character Recognition (OCR) system that automatically extracts data from invoices and generates structured Excel sheets.",
         image: "/excel_update.png",
@@ -39,11 +55,11 @@ const projects = [
     },
     {
         title: "Yumesession AI (Browser Extension & Desktop)",
-        description: "A comprehensive AI productivity session manager with a browser extension and desktop app, built to optimize workflows and assist users.",
+        description: "A dual-layer AI productivity workspace connecting a browser extension for active web capture and research trails with a desktop application for local AI session processing.",
         image: "/yumi.jpg",
         github: "https://github.com/DreamerChaserHAH/yumesession-desktop",
         demo: "https://github.com/DreamerChaserHAH/yumesession-browser-extension",
-        tags: ["Browser Extension", "Desktop App", "Productivity"],
+        tags: ["Browser Extension", "Desktop App", "Productivity", "AI Workflows"],
     },
     {
         title: "VPet AI Summarization - Hacktheletes AIC",

@@ -1,0 +1,4 @@
+const {chromium}=require('C:/Users/tanwa/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const assert=require('node:assert/strict');
+(async()=>{const b=await chromium.launch({headless:true,executablePath:'C:/Users/tanwa/AppData/Local/ms-playwright/chromium-1223/chrome-win64/chrome.exe'});try{for(const width of [1440,390,320]){const p=await b.newPage({viewport:{width,height:900}});await p.goto('http://127.0.0.1:3000');assert.equal((await p.locator('h1').innerText()).trim(),'Tan Wai Ken.');assert.equal(await p.locator('header .wordmark').getAttribute('aria-label'),'Tan Wai Ken, home');assert.ok(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await p.screenshot({path:`artifacts/visual-qa/name-${width}.png`});console.log('PASS name and layout at '+width);await p.close();}}finally{await b.close();}})().catch(e=>{console.error(e);process.exitCode=1});
+

@@ -62,7 +62,7 @@ export function HeroSection() {
           {/* Name */}
           <div style={{ position: 'relative', height: '150px', width: '100%', maxWidth: '100%' }} className="mb-2">
             <TextPressure
-              text="KEN TAN"
+              text="TAN WAI KEN"
               flex
               alpha={false}
               stroke={false}
