@@ -41,10 +41,17 @@ variables and production deployment have not been changed by this implementation
 
 ## Loading screen
 
-Waits for the painted hero, guide image, fonts and card readiness. Resource failure
+The server-rendered overlay covers the first paint, before hydration. It waits for
+the painted hero, guide image, fonts, card readiness and the first traffic summary.
+The loader and footer share one initial request; no visit to `/analytics` is needed.
+The summary request times out after five seconds. Resource failure
 settles its stage; a 6.5-second deadline and an Enter portfolio button prevent lockout.
-It does not wait for analytics or all below-fold assets. No JavaScript leaves the
-dialog closed and portfolio content accessible.
+It does not wait for all below-fold assets. With JavaScript disabled, a noscript
+style hides the overlay and leaves portfolio content accessible.
+
+`node scripts/analytics-loading-qa.cjs` verifies delayed, failed and timed-out summary
+requests, the pre-hydration overlay, no-JavaScript access, and no redirect or second
+initial request. Its API fixtures never write real visitor events.
 
 ## Verification
 

@@ -3092,7 +3092,7 @@ details[open]>summary .details-plus {
 /* The entry screen waits on real first-screen resources, with a clear exit. */
 .portfolio-loader { position: fixed; inset: 0; margin: auto; padding: 32px; width: 100vw; max-width: 100vw; height: 100dvh; max-height: 100dvh; border: 0; background: var(--paper); color: var(--ink); }
 .portfolio-loader::backdrop { background: var(--paper); }
-.portfolio-loader[open] { display: grid; place-items: center; }
+.portfolio-loader[open] { display: grid; place-items: center; z-index: 10000; }
 .portfolio-loader:not([open]) { display: none; }
 .loader-paper { width: min(100%, 480px); position: relative; }
 .loader-paper::before { content: ''; position: absolute; inset: -60px -80px; background: url('/art/landscape.webp') center / cover; opacity: .17; mask-image: radial-gradient(ellipse, #000 10%, transparent 70%); pointer-events: none; z-index: -1; }

@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from 'react';
 import { actionLabels, type AnalyticsAction, type TrafficSummary } from '@/lib/analytics/types';
+import { loadTrafficSummary } from '@/lib/analytics/client';
 
 declare global { interface Window { portfolioViewId?: string } }
 function actionFor(element: Element): AnalyticsAction | null {
@@ -48,10 +49,10 @@ export function LiveTraffic(){
  const [available,setAvailable]=useState(false);
  const [updated,setUpdated]=useState<string|null>(null);
  useEffect(()=>{
-  const controller=new AbortController();let pending=false;
-  const update=async()=>{if(document.hidden || pending)return;pending=true;try{const response=await fetch('/api/analytics/summary',{cache:'no-store',signal:controller.signal});const value=await response.json();if(!controller.signal.aborted){setAvailable(Boolean(value.available));if(value.available){setData(value.data);setUpdated(new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'}));}}}catch{if(!controller.signal.aborted)setAvailable(false);}finally{pending=false;}};
-  update();const timer=setInterval(update,15000);document.addEventListener('visibilitychange',update);
-  return()=>{controller.abort();clearInterval(timer);document.removeEventListener('visibilitychange',update);};
+  let cancelled=false,pending=false;
+  const update=async(initial=false)=>{if((document.hidden && !initial) || pending)return;pending=true;const value=await loadTrafficSummary(initial);if(!cancelled){setAvailable(value.available);if(value.available && value.data){setData(value.data);setUpdated(new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'}));}}pending=false;};
+  void update(true);const refresh=()=>{void update();};const timer=setInterval(refresh,15000);document.addEventListener('visibilitychange',refresh);
+  return()=>{cancelled=true;clearInterval(timer);document.removeEventListener('visibilitychange',refresh);};
  },[]);
  const fmt=(value:number|undefined)=>value===undefined?'—':new Intl.NumberFormat().format(value);
  return <section className="live-traffic section-wrap" aria-labelledby="traffic-heading">
