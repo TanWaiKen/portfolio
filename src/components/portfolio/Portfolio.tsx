@@ -20,6 +20,8 @@ import {
   X,
 } from "lucide-react";
 import { projects, awards } from "./content";
+import { LiveTraffic, TrafficTracker } from "./TrafficAnalytics";
+import { PortfolioLoader } from "./PortfolioLoader";
 import { HangingPortrait } from "./HangingPortrait";
 import { PaintedBackground } from "./PaintedBackground";
 import { LEADERSHIP_EVENTS } from "../sections/leadership/data";
@@ -341,6 +343,8 @@ export default function Portfolio() {
 
   return (
     <>
+      <PortfolioLoader />
+      <TrafficTracker />
       <a className="skip-link" href="#main">
         Skip to content
       </a>
@@ -944,6 +948,7 @@ export default function Portfolio() {
         </section>
       </main>
 
+      <LiveTraffic />
       <footer className="site-footer section-wrap">
         <a className="wordmark" href="#home">
           <span className="monogram">k.</span>
